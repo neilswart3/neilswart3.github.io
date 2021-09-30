@@ -1,12 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { ArwesThemeProvider, StylesBaseline } from '@arwes/core'
 import App from './App'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
 
+const ROOT_FONT_FAMILY = '"Titillium Web", sans-serif'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ArwesThemeProvider>
+      <StylesBaseline
+        styles={{
+          body: { fontFamily: ROOT_FONT_FAMILY, height: '100vh' },
+          button: { margin: '0 20px 20px 0' },
+        }}
+      />
+      <App />
+    </ArwesThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

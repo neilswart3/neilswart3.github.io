@@ -1,11 +1,8 @@
 import React from 'react'
+import { GeneralLayout } from 'src/layouts'
 
 function App() {
-  return (
-    <div>
-      <h1>Create React App - Typescript - PWA boilerplate</h1>
-    </div>
-  )
+  return <GeneralLayout>test</GeneralLayout>
 }
 
 export default App

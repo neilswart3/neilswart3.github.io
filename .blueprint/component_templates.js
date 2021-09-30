@@ -52,7 +52,7 @@ describe('${name} Component', () => {
 `
 
 // styles.ts
-exports.styles = (name) => `import styled from 'styled-components'
+exports.styles = (name) => `import styled from '@emotion/styled'
 
 const ${name} = styled.div\`
   display: block;
